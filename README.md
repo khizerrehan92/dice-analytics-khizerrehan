@@ -10,13 +10,11 @@ to month.
 - It allow to idenitfy bugs at any stage and fix and follow the same process before going into production
 
 #### Devops: 
-
 - Devops methodology bringing developement and operations hand to hand
 - It is more sort face pace developement focuses on continiouse delivery of 
 feature and focueses on continious feedback
 - plan -> code -> test -> deploy -> feeback -> monitor  and same cycle is repeated
  in continous manner
-
 
 ## Define CI, Continuous Delivery & Continuous Deployment
 - Continuous Integration(CI) means continious integration of developers code to a centeralized VCS system 
@@ -50,9 +48,7 @@ creating builds and hosting build folder to production server.
 ## Difference b/w Git & Github
 
 - Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency
-
 - GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
-
 
 ## Stages of Git
 - Working Copy (Editor)
@@ -60,8 +56,7 @@ creating builds and hosting build folder to production server.
 - Local Repositry (committed files with timestamp + content stored in SHA-1 hashed value of content)
 - Remote Repositry (Content that is placed in actual VCS system)
 
-![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/main/git-stages.png)
-
+<img src="https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/main/git-stages.png" alt="git-stages" />
 
 ## 3 methods of git reset?
 The three methods of git reset are:
