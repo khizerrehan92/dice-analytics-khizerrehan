@@ -56,7 +56,7 @@ creating builds and hosting build folder to production server.
 - Local Repositry (committed files with timestamp + content stored in SHA-1 hashed value of content)
 - Remote Repositry (Content that is placed in actual VCS system)
 
-<img src="https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/main/git-stages.png" alt="git-stages" />
+<img src="https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/main/git-stages.png?raw=true" alt="git-stages" />
 
 ## 3 methods of git reset?
 The three methods of git reset are:
