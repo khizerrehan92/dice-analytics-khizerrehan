@@ -21,20 +21,20 @@ feature and focueses on continious feedback
 ## Define CI, Continuous Delivery & Continuous Deployment
 - Continuous Integration(CI) means continious integration of developers code to a centeralized VCS system 
 where all developers can share theier code to main repo as many times in day. 
- - Github
- - SVN
- - Bitbucket
+ e.g - Github
+     - SVN
+     - Bitbucket
 
 - Continuous Delivery: is a process where updated is code taken from shared repo from it's main branch and it
 is deployed in a test/staging environment so that continious feedback can be taken and monitor chnages before
 going into production
- - github actions
- - Jenkins pipeline
+ e.g - github actions
+     - Jenkins pipeline
 
 - Continuous Deployment: is a process when final changes can be deployed to live/production so that end customers can have this bug free verison. All this process is automated from CI -> CD -> CD without manually 
 creating builds and hosting build folder to production server.
  e.g - Heroku
-     - Metlify
+     - Netlify
 
 ## What are the benefits of Cloud Computing
 - Security
