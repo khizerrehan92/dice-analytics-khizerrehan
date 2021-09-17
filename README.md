@@ -52,3 +52,12 @@ creating builds and hosting build folder to production server.
 - Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency
 
 - GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
+
+
+## Stages of Git
+- Working Copy (Editor)
+- Staging (Show files which are about to commit)
+- Local Repositry (committed files with timestamp + content stored in SHA-1 hashed value of content)
+- Remote Repositry (Content that is placed in actual VCS system)
+
+![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/main/git-stages.png)
