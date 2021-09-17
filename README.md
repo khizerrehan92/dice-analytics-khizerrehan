@@ -35,3 +35,16 @@ going into production
 creating builds and hosting build folder to production server.
  e.g - Heroku
      - Metlify
+
+
+
+## What are the benefits of Cloud Computing
+- Security
+- Disaster Recovery
+- Loss Prevention
+- Automatic Software Updates
+- Competitive Edge
+- Sustainability
+- Scalability
+- Cheap Cost 
+- Pay as you go subscription modal
