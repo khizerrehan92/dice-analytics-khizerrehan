@@ -61,3 +61,13 @@ creating builds and hosting build folder to production server.
 - Remote Repositry (Content that is placed in actual VCS system)
 
 ![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/main/git-stages.png)
+
+
+## 3 methods of git reset?
+The three methods of git reset are:
+- `mixed` -> git reset --mixed HEAD~<no-of-commits>
+- `soft`  -> git reset --soft HEAD~<no-of-commits>
+- `hard`  -> git reset --hard HEAD~<no-of-commits>committed.
+
+
+## Thank you!!
