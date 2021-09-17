@@ -9,7 +9,7 @@ process from plan -> design -> develop -> test -> deploy -> review -> production
 to month.
 - It allow to idenitfy bugs at any stage and fix and follow the same process before going into production
 
- #### Devops: 
+#### Devops: 
 
 - Devops methodology bringing developement and operations hand to hand
 - It is more sort face pace developement focuses on continiouse delivery of 
