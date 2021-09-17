@@ -36,8 +36,6 @@ creating builds and hosting build folder to production server.
  e.g - Heroku
      - Metlify
 
-
-
 ## What are the benefits of Cloud Computing
 - Security
 - Disaster Recovery
@@ -48,3 +46,9 @@ creating builds and hosting build folder to production server.
 - Scalability
 - Cheap Cost 
 - Pay as you go subscription modal
+
+## Difference b/w Git & Github
+
+- Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency
+
+- GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
