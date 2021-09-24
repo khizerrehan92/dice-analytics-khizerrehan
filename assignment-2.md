@@ -57,7 +57,17 @@ docker logs -f assignment-2
 - / # cat /usr/share/nginx/html/index.html
 ```
 
-- Exit the above container, and now recreate the container by Volume using bind mounting
-- Command to exec into the above container and replace the default index.html to a custom one, which says that â€œI am becoming a Docker Expertâ€ and it should be persisted for the next times.
+docker container run -p 9090:80 --name assignment-2 -v  /Users/khizerrehan/Desktop/Repos/Personal/Github/dice/://usr/share/nginx/html/ -d nginx:alpine
 
+## Exit the above container, and now recreate the container by Volume using bind mounting
+
+```
+- docker container stop assignment-2 
+```
+
+### Command to exec into the above container and replace the default index.html to a custom one, which says that â€œI am becoming a Docker Expertâ€ and it should be persisted for the next times.
+
+```
+docker container run -p 9090:80 --name assignment-2 -v  /Users/khizerrehan/Desktop/Repos/Personal/Github/dice/:/usr/share/nginx/html/ -d nginx:alpine
+```
 ## Thank you!!
