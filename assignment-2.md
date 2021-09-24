@@ -35,11 +35,16 @@ Docker has three main components:
 - Docker Registry -> hub where public/private registries are stored.
 
 
+### Write command to create an nginx container in detached mode with name assignment-2 running on host port 9090 on a custom network named assignment-2
+
+```sh
+
+docker container run -p 9090:80 --name assignment-2 -d nginx:alpine
+
+```
+- e.g Output `ed311c3aa4d490cf1e5b87024aec7bcadc0a292a98304f2e4ec468f4db75ec14`
 
 
-
-
-- Write command to create an nginx container in detached mode with name assignment-2 running on host port 9090 on a custom network named assignment-2
 - Write command to see logs of the above container
 - Write commands to Exec into the container and cat the output of the default nginx file at /usr/share/nginx/html/index.html 
 - Exit the above container, and now recreate the container by Volume using bind mounting
