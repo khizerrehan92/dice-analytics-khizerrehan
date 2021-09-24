@@ -2,7 +2,7 @@
 
 Use the same github repo as used in Assignment1 or create another repo and type the answers/commands for following scenarios and merge them to main branch from a PR
 ## Explain Docker Containers vs VMs
-Ans: Virtual machine is a concept where a complete machine is setup within a system. It is more sort of virtulaization of computer system. VM machines are based on
+Virtual machine is a concept where a complete machine is setup within a system. It is more sort of virtulaization of computer system. VM machines are based on
 computer archiecture and hardware. It is basically more sort of hardware virtualization. Where set of resources are assigned and a new system is set up on the same machine
 with all the capabilties that a fully fledges system has like OS, Libs and other binaries to run software on it but it is virtializaed in on a same machine using layer called
 Hypervisor which enables virtualziation.
