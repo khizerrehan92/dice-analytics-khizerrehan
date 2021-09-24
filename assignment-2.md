@@ -37,15 +37,20 @@ Docker has three main components:
 
 ### Write command to create an nginx container in detached mode with name assignment-2 running on host port 9090 on a custom network named assignment-2
 
-```sh
-
+```
 docker container run -p 9090:80 --name assignment-2 -d nginx:alpine
-
 ```
 - e.g Output `ed311c3aa4d490cf1e5b87024aec7bcadc0a292a98304f2e4ec468f4db75ec14`
 
 
-- Write command to see logs of the above container
+## Write command to see logs of the above container
+
+```
+docker logs -f assignment-2
+```
+
+
+
 - Write commands to Exec into the container and cat the output of the default nginx file at /usr/share/nginx/html/index.html 
 - Exit the above container, and now recreate the container by Volume using bind mounting
 - Command to exec into the above container and replace the default index.html to a custom one, which says that â€œI am becoming a Docker Expertâ€ and it should be persisted for the next times.
