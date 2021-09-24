@@ -23,7 +23,7 @@ and pver that system resources creating isolation containers which runs as a iso
 
 
 
-![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/assignment-2/docker-vs-vms.png)
+![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/main/docker-vs-vms.png)
 
 
 ## Explain Docker Architecture
@@ -39,7 +39,7 @@ Docker has three main components:
 - Docker Registry -> hub where public/private registries are stored.
 
 
-![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/assignment-2/docker-archi.jpeg)
+![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/main/docker-archi.jpeg)
 
 
 ### Write command to create an nginx container in detached mode with name assignment-2 running on host port 9090 on a custom network named assignment-2
