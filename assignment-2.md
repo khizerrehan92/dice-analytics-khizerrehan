@@ -22,6 +22,10 @@ and pver that system resources creating isolation containers which runs as a iso
 | 5  | CPU, Memory, Space is shared                            | Set of CPU, Mempry, Space is allocated                           |
 
 
+
+![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/assignment-2/docker-vs-vms.png)
+
+
 ## Explain Docker Architecture
 Docker uses client server architecture. 
 - The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers. 
@@ -35,6 +39,9 @@ Docker has three main components:
 - Docker Registry -> hub where public/private registries are stored.
 
 
+![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/assignment-2/docker-archi.jpeg)
+
+
 ### Write command to create an nginx container in detached mode with name assignment-2 running on host port 9090 on a custom network named assignment-2
 
 ```
@@ -42,13 +49,14 @@ docker container run -p 9090:80 --name assignment-2 -d nginx:alpine
 ```
 - e.g Output `ed311c3aa4d490cf1e5b87024aec7bcadc0a292a98304f2e4ec468f4db75ec14`
 
+- [Video Link](https://gyazo.com/67a16142cf43ea5fd23b910bd2a64aef)
 
 ## Write command to see logs of the above container
 
 ```
 docker logs -f assignment-2
 ```
-
+- [Video Link](https://gyazo.com/5df0354e7a6c8484402f85e5a105c0af)
 
 
 ## Write commands to Exec into the container and cat the output of the default nginx file at /usr/share/nginx/html/index.html 
@@ -57,6 +65,9 @@ docker logs -f assignment-2
 - / # cat /usr/share/nginx/html/index.html
 ```
 
+- [Video Link](https://gyazo.com/3cde0dbd5dd74ee3a68a669a55c3ac1a)
+
+
 docker container run -p 9090:80 --name assignment-2 -v  /Users/khizerrehan/Desktop/Repos/Personal/Github/dice/://usr/share/nginx/html/ -d nginx:alpine
 
 ## Exit the above container, and now recreate the container by Volume using bind mounting
@@ -64,10 +75,18 @@ docker container run -p 9090:80 --name assignment-2 -v  /Users/khizerrehan/Deskt
 ```
 - docker container stop assignment-2 
 ```
+- [Video Link](https://gyazo.com/2ea17e40be85991c65afabdd8649c67b)
+
+
 
 ### Command to exec into the above container and replace the default index.html to a custom one, which says that â€œI am becoming a Docker Expertâ€ and it should be persisted for the next times.
 
 ```
 docker container run -p 9090:80 --name assignment-2 -v  /Users/khizerrehan/Desktop/Repos/Personal/Github/dice/:/usr/share/nginx/html/ -d nginx:alpine
 ```
+- [Video Link](https://gyazo.com/1aa041f4dc525c146bcff4748513cea3)
+
+
+
+
 ## Thank you!!
