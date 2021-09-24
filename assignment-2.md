@@ -22,7 +22,23 @@ and pver that system resources creating isolation containers which runs as a iso
 | 5  | CPU, Memory, Space is shared                            | Set of CPU, Mempry, Space is allocated                           |
 
 
-- Explain Docker Architecture
+## Explain Docker Architecture
+Docker uses client server architecture. 
+- The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers. 
+
+- The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker daemon through REST API.
+
+Docker has three main components:
+
+- Client -> cli through which client interacts with dcoker deamon
+- Docker Host -> manages container and communicates with HOST OS
+- Docker Registry -> hub where public/private registries are stored.
+
+
+
+
+
+
 - Write command to create an nginx container in detached mode with name assignment-2 running on host port 9090 on a custom network named assignment-2
 - Write command to see logs of the above container
 - Write commands to Exec into the container and cat the output of the default nginx file at /usr/share/nginx/html/index.html 
