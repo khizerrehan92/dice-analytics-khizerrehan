@@ -51,7 +51,12 @@ docker logs -f assignment-2
 
 
 
-- Write commands to Exec into the container and cat the output of the default nginx file at /usr/share/nginx/html/index.html 
+## Write commands to Exec into the container and cat the output of the default nginx file at /usr/share/nginx/html/index.html 
+```
+- docker exec -it assignment-2 sh
+- / # cat /usr/share/nginx/html/index.html
+```
+
 - Exit the above container, and now recreate the container by Volume using bind mounting
 - Command to exec into the above container and replace the default index.html to a custom one, which says that â€œI am becoming a Docker Expertâ€ and it should be persisted for the next times.
 
