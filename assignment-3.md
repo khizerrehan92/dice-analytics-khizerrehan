@@ -64,5 +64,19 @@ of previous layer to next one.
     CMD ["./my-binary"]
 ```
 
+## Explain containers vs Image
+
+| No | Image                                    | Container                                                                                  |
+|----|------------------------------------------|--------------------------------------------------------------------------------------------|
+| 1  | It is a blue print of an application     | it is a instance of blue print and we can have multiple instance of conatiners for a image |
+| 2  | see list of images `docker images`       | see list of containers running `docker ps -a`                                              |
+| 3  | It can exist independent of a container. | container is spawn based on image                                                          |
+| 4  | Takes minimum amount of space            | Takes minimum amount of space to create VM                                                 |
+| 5  | CPU, Memory, Space is shared             | Set of CPU, Mempry, Space is allocated                                                     |
+
+- Explain RUN vs CMD vs Entrypoint
+- Improve the Dockerfile for python Application given in slides using the Dockerfile & then improve it and share image size & estimated build time for it
+- Run mysql container using the official image, by persisting data and passing environment variables to set username & passwordâ€¦ You can see the information of how to persist and information here
+
 
 ## Thank you!!
