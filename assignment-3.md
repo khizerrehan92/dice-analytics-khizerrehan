@@ -97,10 +97,42 @@ ENTRYPOINT [ "curl"]
  - `docker run -it khizerrehan92/cmd-vs-entrypoint https://github.com/KhizerRehan` overriding default command line argument
 
  
-
 ## Improve the Dockerfile for python Application given in slides using the Dockerfile & then improve it and share image size & estimated build time for it
 
-## Run mysql container using the official image, by persisting data and passing environment variables to set username & passwordâ€¦ You can see the information of how to persist and information here
 
+## Run mysql container using the official image, by persisting data and passing environment variables to set username & passwordâ€¦ You can see the information of how to persist and information here
+#### Step to follow:
+- docker pull --platform linux/x86_64 mysql:latest
+- docker images
+- docker run --name mysqldb -p 3307:3306 -e MYSQL_ROOT_PASSWORD=password --platform linux/x86_64 -v /Users/khizerrehan/Desktop/Repos/Personal/Github/opt/containers/mysql-data:/var/lib/mysql -d mysql:latest 
+- docker exec -it mysqldb bash
+- mysql -h localhost -P 3306 -u root -p
+- create database test;
+- use Test;
+- CREATE TABLE Persons (
+    LastName varchar(255),
+    FirstName varchar(255)
+);
+- show tables;
+- select * from Persons;
+- Insert into Persons Values('khizer', 'rehan');
+- Insert into Persons Values('dice', 'analytics');
+```
+mysql> Select * from Persons;
++----------+-----------+
+| LastName | FirstName |
++----------+-----------+
+| khizer   | rehan     |
+| dice     | analytics |
++----------+-----------+
+2 rows in set (0.01 sec)
+```
+
+Stop Docker image
+- docker rm -f mysqldb
+- create new instance with same volume mount as in first step
+- login to mysql client
+- use Test; // select Test database
+- Select * from Persons; // retrieve same persisted data
 
 ## Thank you!!
