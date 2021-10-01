@@ -74,9 +74,33 @@ of previous layer to next one.
 | 4  | Takes minimum amount of space            | Takes minimum amount of space to create VM                                                 |
 | 5  | CPU, Memory, Space is shared             | Set of CPU, Mempry, Space is allocated                                                     |
 
-- Explain RUN vs CMD vs Entrypoint
-- Improve the Dockerfile for python Application given in slides using the Dockerfile & then improve it and share image size & estimated build time for it
-- Run mysql container using the official image, by persisting data and passing environment variables to set username & passwordâ€¦ You can see the information of how to persist and information here
+## Explain RUN vs CMD vs Entrypoint
+
+- RUN is an image build step, the state of the container after a RUN command will be committed to the container image. A Dockerfile can have many RUN steps that layer on top of one another to build the image.
+
+- CMD is the command the container executes by default when you launch the built image. A Dockerfile will only use the final CMD defined. The CMD can be overridden when starting a container with docker run <image_name> <command-passed-after-docker-image>
+
+- ENTRYPOINT is also closely related to CMD and can modify the way a container starts an image.
+
+#### Example Docker file
+```js
+FROM ubuntu
+LABEL Author = "Khizer"
+RUN apt update && apt install -y curl
+CMD ["https://google.com"]
+ENTRYPOINT [ "curl"]
+```
+
+- Pull docker image from using following command:
+ - `docker pull khizerrehan92/cmd-vs-entrypoint`
+ - `docker exec -it khizerrehan92/cmd-vs-entrypoint` to see default `google.com` output
+ - `docker run -it khizerrehan92/cmd-vs-entrypoint https://github.com/KhizerRehan` overriding default command line argument
+
+ 
+
+## Improve the Dockerfile for python Application given in slides using the Dockerfile & then improve it and share image size & estimated build time for it
+
+## Run mysql container using the official image, by persisting data and passing environment variables to set username & passwordâ€¦ You can see the information of how to persist and information here
 
 
 ## Thank you!!
