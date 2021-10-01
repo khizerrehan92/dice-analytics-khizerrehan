@@ -1,5 +1,8 @@
 # Assignment-3
 
+- Complete all the labs
+- Build the images for Microservices (remember to edit code for frontend) and push images to Dockerhub and write commands to run backedn & frontend and they should run fine
+
 ## How to leverage cache using Dockerfiles
 Cache leveraging in `Dockerfile` helps to optimize and helps to build Faster builds. Dokcer file is a set of instructions
 that are executed and create a layer for each command. The layers are stacked and each one is a delta of the changes from the previous layer. Inorder to leverage the cache to build faster images with minium amount of time follow best practices so that
@@ -37,6 +40,28 @@ to used already existed unchanged layer changes
     RUN npm install
     COPY  . .
     CMD [ "npm", "start" ]
+```
+
+
+## What are multi-stage builds
+Multistage build helps to write a docker image from multiple `FROM` statements leveraging to build image 
+from several bases which can help to have build image with size very minimal amount. Using multistage build
+docker image is splitted into multiple sections where as each stage has it's own `FROM` statement so that
+image can be build based on several base images. Each stage can utilize predecessors build taking advantage
+of previous layer to next one.
+
+#### MultiStage Build Example
+
+```js
+    FROM golang:latest AS build
+    WORKDIR /go
+    COPY app.go .
+    RUN go build -o my-binary
+    
+    FROM alpine:latest
+    WORKDIR /app
+    COPY --from=build /go/my-binary .
+    CMD ["./my-binary"]
 ```
 
 
