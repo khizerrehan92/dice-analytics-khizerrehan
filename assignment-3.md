@@ -114,7 +114,7 @@ ENTRYPOINT [ "curl"]
 - select * from Persons;
 - Insert into Persons Values('khizer', 'rehan');
 - Insert into Persons Values('dice', 'analytics');
-```
+
 mysql> Select * from Persons;
 +----------+-----------+
 | LastName | FirstName |
@@ -123,7 +123,7 @@ mysql> Select * from Persons;
 | dice     | analytics |
 +----------+-----------+
 2 rows in set (0.01 sec)
-```
+
 
 Stop Docker image
 - docker rm -f mysqldb
@@ -131,5 +131,6 @@ Stop Docker image
 - login to mysql client
 - use Test; // select Test database
 - Select * from Persons; // retrieve same persisted data
+```
 
 ## Thank you!!
