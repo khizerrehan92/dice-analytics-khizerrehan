@@ -96,6 +96,15 @@ ENTRYPOINT [ "curl"]
  
 ## Improve the Dockerfile for python Application given in slides using the Dockerfile & then improve it and share image size & estimated build time for it
 
+- UnOptimized Docker Image:
+ File Attached inside `python/Dockerfile.before-optimization` 
+<img src="https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/assignment-3/docker-python-unoptimized.png?raw=true" alt="git-stages" />
+
+
+- Optimized Docker Image:
+ File Attached inside `python/Dockerfile.after-optimization`assignment-3
+ <img src="https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/assignment-3/docker-python-optimized.png?raw=true" alt="git-stages" />
+
 
 ## Run mysql container using the official image, by persisting data and passing environment variables to set username & passwordâ€¦ You can see the information of how to persist and information here
 #### Step to follow:
