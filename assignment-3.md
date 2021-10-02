@@ -107,7 +107,10 @@ ENTRYPOINT [ "curl"]
 
 
 ## Run mysql container using the official image, by persisting data and passing environment variables to set username & passwordâ€¦ You can see the information of how to persist and information here
+
 #### Step to follow:
+
+```
 - docker pull --platform linux/x86_64 mysql:latest
 - docker images
 - docker run --name mysqldb -p 3307:3306 -e MYSQL_ROOT_PASSWORD=password --platform linux/x86_64 -v /Users/khizerrehan/Desktop/Repos/Personal/Github/opt/containers/mysql-data:/var/lib/mysql -d mysql:latest 
