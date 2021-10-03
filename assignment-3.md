@@ -1,5 +1,24 @@
 # Assignment-3
 
+## Build the images for Microservices (remember to edit code for frontend) and push images to Dockerhub and write commands to run backedn & frontend and they should run fine
+
+#### Run Backend Application
+```
+Backend:
+
+- docker build -t backend-app .
+- docker run -it --rm --name backend --network application -p 9090:8080 -d backend-app
+
+- docker build -t frontend-app .
+- docker run -it --rm --name frontend --network application -p 9091:8080 -d frontend-app
+
+Check Network Mode (Inorder to have container communication between)
+- docker inspect frontend | grep "NetworkMode" => `application`
+- docker inspect backend | grep "NetworkMode"  => `application`
+```
+
+- [Video Link](https://gyazo.com/2ac8995f011d34c0f539552778b86fc2)
+
 ## How to leverage cache using Dockerfiles
 Cache leveraging in `Dockerfile` helps to optimize and helps to build Faster builds. Dokcer file is a set of instructions
 that are executed and create a layer for each command. The layers are stacked and each one is a delta of the changes from the previous layer. Inorder to leverage the cache to build faster images with minium amount of time follow best practices so that
