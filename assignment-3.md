@@ -2,7 +2,7 @@
 
 ### Build the images for Microservices (remember to edit code for frontend) and push images to Dockerhub and write commands to run backedn & frontend and they should run fine
 
-#### Run Backend Application
+#### Build/Run Frontend/Backend Application
 ```
 Backend:
 
