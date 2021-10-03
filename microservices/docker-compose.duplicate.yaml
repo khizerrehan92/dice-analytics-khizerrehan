@@ -1,0 +1,25 @@
+# Adding compose file to write by yourself for practice
+version: "3.7"
+# Services are basically containers:
+services:
+  backend: # BE service name
+    build: # build backend
+      context: backend-python
+      dockerfile: Dockerfile
+    networks:
+      - appNet
+    ports:
+      - 9090:8080
+  frontend: # FE service name
+    build: # build frontend
+      context: frontend-node/
+      dockerfile: Dockerfile
+    networks:
+      - appNet
+    ports:
+      - 9091:8080
+    depends_on:
+      - backend
+networks:
+  appNet:
+    name: "appNet"

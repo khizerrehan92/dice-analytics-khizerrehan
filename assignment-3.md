@@ -17,6 +17,13 @@ Check Network Mode (Inorder to have container communication between)
 - docker inspect backend | grep "NetworkMode"  => `application`
 ```
 
+#### Build/Run Frontend/Backend Application Using Docker Compose file
+```
+- docker compose -f docker-compose.duplicate.yaml up // build & run backend and frontend applications
+- docker network ls // display list of networks
+- docker compose -f docker-compose.duplicate.yaml down // remove running container & remove new network
+```
+
 - [Video Link](https://gyazo.com/2ac8995f011d34c0f539552778b86fc2)
 
 ### How to leverage cache using Dockerfiles
