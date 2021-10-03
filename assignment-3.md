@@ -32,15 +32,15 @@ to used already existed unchanged layer changes
 - Image Size: `166MB`
 - Build time: `27sec`
 ```js
-    FROM    node:14.17.2-stretch-slim
-    LABEL   name="Express Application" 
-    COPY  . . // Each time any code is updated all below steps are re-executed:
-    RUN apt-get update && apt-get install curl 
-    WORKDIR /express-app
-    COPY package*.json ./
-    RUN npm install
-    EXPOSE  3000
-    CMD [ "npm", "start" ]
+FROM    node:14.17.2-stretch-slim
+LABEL   name="Express Application" 
+COPY  . . // Each time any code is updated all below steps are re-executed:
+RUN apt-get update && apt-get install curl 
+WORKDIR /express-app
+COPY package*.json ./
+RUN npm install
+EXPOSE  3000
+CMD [ "npm", "start" ]
 ```
 
 - Image Size: `166MB`
@@ -48,15 +48,15 @@ to used already existed unchanged layer changes
 
 #### Good Docker Image
 ```js
-    FROM    node:14.17.2-stretch-slim
-    LABEL   name="Express Application"
-    RUN apt-get update && apt-get install curl 
-    EXPOSE  3000
-    WORKDIR /express-app
-    COPY package*.json ./
-    RUN npm install
-    COPY  . .
-    CMD [ "npm", "start" ]
+FROM    node:14.17.2-stretch-slim
+LABEL   name="Express Application"
+RUN apt-get update && apt-get install curl 
+EXPOSE  3000
+WORKDIR /express-app
+COPY package*.json ./
+RUN npm install
+COPY  . .
+CMD [ "npm", "start" ]
 ```
 
 
@@ -70,15 +70,15 @@ of previous layer to next one.
 #### MultiStage Build Example
 
 ```js
-    FROM golang:latest AS build
-    WORKDIR /go
-    COPY app.go .
-    RUN go build -o my-binary
-    
-    FROM alpine:latest
-    WORKDIR /app
-    COPY --from=build /go/my-binary .
-    CMD ["./my-binary"]
+FROM golang:latest AS build
+WORKDIR /go
+COPY app.go .
+RUN go build -o my-binary
+
+FROM alpine:latest
+WORKDIR /app
+COPY --from=build /go/my-binary .
+CMD ["./my-binary"]
 ```
 
 ### Explain containers vs Image
