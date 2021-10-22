@@ -103,6 +103,10 @@ application per pod and there could be multiple side car containers running insi
 - `Pods`:
 Pods are the smallest Kubernetes objects that represents an application. What is worth mentioning, Pods are not containers. They’re wrapper for one or more containers, which contains not only working application but also some metadata.
 
+#### Pod (Smallest Unit of Cluster)
+![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/assignment-4/images/pod.png)
+
+#### Multiple Pods within K8's cluster
 ![image](https://github.com/khizerrehan92/dice-analytics-khizerrehan/blob/assignment-4/images/pod.jpeg)
 
 - `Deployments`: 
