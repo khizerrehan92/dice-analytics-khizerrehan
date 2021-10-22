@@ -9,6 +9,19 @@
  Kubernetes can be considered as OS for cloud applications.It reduce the burden of orchestrating underlying compute, network, and storage infrastructure, and enable application operators and developers to focus entirely on container-centric workflows for self-service operation. It allows developers to purely focus on workflows happening
  inside containers keeping the rest of burden for 
 
+#### Reasons for to give birth of Kubernetes?
+There were many challanges that were facing on container that gave rise to birth of Kubernete. 
+There were no:
+- Auto scaling mechanism
+- Auto recovery mechanism
+- Handling Secrets and Sensitive data in a secure way
+- Port conflicts
+- Management of enterprise application running in containers
+- Service Discovery
+- Load Balancing 
+- Updating Applications with 0 Downtime
+- Hosting application on multiple host
+
 
  #### Benefits of Kubernetes
  - Auto Scaling
